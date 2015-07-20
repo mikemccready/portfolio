@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	font-family: avenir;
+}
+
+#hero {
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	z-index: 0
+}
+
+#heroType {
+	position: absolute;
+	font-family: league gothic;
+	font-weight: normal;
+	color: white;
+	top: 15vw;
+	font-size: 15vw;
+	z-index: 300;
+	text-align: center;
+	width: 100vw;
+
+}
+
+.mainContain {
+	position: absolute;
+	background-color: white;
+	top: 60vw;
+	width: 100vw;
+	z-index: 500;
+}
+
+#pjImage {
+	width: 75%;
+}
+
+.bg-blur {
+	margin-top: 40em;
+	width: 100vw;
+	height: 50%;
+  	background: url(../_images/bg-blur.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: 1000;
+}
