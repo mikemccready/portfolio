@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-	<title>Mimic Developement & Design</title>
+	<title>mimic developement & design</title>
 	<link rel="stylesheet" type="text/css" href="_css/style.css">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 	<script type="text/javascript" src="_js/app.js"></script>
 	<script type="text/javascript" src="_js/controller.js"></script>
 	<script src="//use.typekit.net/nnu3rod.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body ng-controller="MainController as mainCtrl">
 	<div id="hero"></div>
+	<nav>
+		<div class="menu"><i class="fa fa-bars"></i></div>
+		<div class="menuToggle">
+			<div class="menuItem">Projects</div>
+			<a href="#icons"><div class="menuItem">Contact</div></a>
+		</div>
+	</nav>	
 	<h1 id="heroType">MIKE McCREADY</h1>
 	<div class="mainContain">
 		<div class="pjWrap">
@@ -40,21 +51,37 @@
 				<h2>CONTACT ME</h2>
 				<input type="text" name="name" size="30" value="" placeholder="name"> 
 				<input type="text" name="email" size="30" value="" placeholder="email">
-				<textarea name="comment" cols="50" rows="5" placeholder="message"></textarea>
-				<input type="button" value="Send" class="submit" onclick="hgsubmit();"> 
+				<input name="comment" cols="10" rows="5" placeholder="message"></input>
+				<input type="button" value="SEND" class="submit" onclick="hgsubmit();"> 
 				<input type="hidden" name="redirect" value="http://www.mmccready.com/"> 
 			</form> 
-		</div>	
+		</div>
+		<div class="icons" id ="icons">
+			<a href="https://github.com/mikemccready"><i class="fa fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/mmccready"><i class="fa fa-linkedin"></i></a>
+		</div>
+	
 	</div>
 
 
 </body>
 
 <script>
+
+	$(document).ready(function(){
+		$(".menuToggle").hide();
+		$(".menu").click(function(){
+			$(".menuToggle").slideToggle();
+		});
+	});
+
+
 	function parallax() {
-		document.getElementById('heroType').style.top = (window.pageYOffset / 1.25)+'px';
+		document.getElementById('heroType').style.top = (window.pageYOffset / 1.35)+'px';
 	}    
 	window.addEventListener("scroll", parallax, false);
+
+
 
 	function hgsubmit(){
 		if (/\S+/.test(document.hgmailer.name.value) == false){ 

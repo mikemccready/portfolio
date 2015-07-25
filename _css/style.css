@@ -3,6 +3,41 @@ body {
 	font-family: "capitolium-2", baskerville;
 }
 
+a, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+
+.menu {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: 2em;
+	color: white;
+}
+
+.menuToggle {
+	position: absolute;
+	top: 5em;
+	z-index: 3000;
+	width: 100vw;
+	text-align: right;
+}
+
+.menuItem {
+	color: white;
+	background-color: transparent;
+	font-weight: bold;	
+	border-bottom: solid white 2px;
+	padding: 1em 2em;
+}
+
+.menuItem:hover {
+	color: rgba(200,150,150,.85);
+	background-color: white;
+}
+
 h2 {
 	font-family: "alternate-gothic-no-1-d", league gothic;
 	color: white;
@@ -22,7 +57,7 @@ h2 {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;	
-  	background-color: rgba(200,150,150,1);
+  	background-color: rgba(200,150,150,.85);
 }
 
 #heroType {
@@ -41,7 +76,7 @@ h2 {
 
 .mainContain {
 	position: absolute;
-	top: 92.5vh;
+	top: 99vh;
 	width: 100vw;
 	z-index: 500;
 	text-align: center;
@@ -49,7 +84,7 @@ h2 {
 
 .pjWrap {
 	background-color: rgba(255,255,255,.95);
-	padding: 5vh 0;
+	padding: 0.5em 0;
 	width: 100vw;
 	text-align: center;
 }
@@ -71,7 +106,7 @@ h2 {
 .pjContain {
 	width: 100vw;
 	height: 30%;
-	margin: 1em 0;
+	margin: .05em 0;
 	background: rgba(255,255,255,.9);
 }
 
@@ -117,29 +152,55 @@ h2 {
 }
 
 .form {
-	height: 85vh;
-	bottom: 0;
-	padding: 35vh 0 0;
+
+	padding: 25vh 0 0;
+	color: white !important;
 }
 
 INPUT {
 	font-size: 1em;
 	font-family: "capitolium-2", baskerville;
+	font-weight: bold;
 	max-width: 50em;
 	width: 90vw;
 	margin: 1em 0;
-	padding: 1em 5vw;
+	padding: 1em 5vw 0;
 	border: none;
-	background-color: rgba(255,255,255,.975);
+	background-color: rgba(255,255,255,0);
+	border-bottom: solid white 2px;
 }
 
-TEXTAREA {
-	font-size: 1em;
-	font-family: "capitolium-2", baskerville;
-	max-width: 50em;
-	width: 90vw;
-	margin: 1em 0;
-	padding: 1em 5vw;
-	border: none;
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+}
+
+.submit {
+	background-color: transparent;
+	font-family: "alternate-gothic-no-1-d", league gothic;
+	color: white;
+	max-width: 38em;
+	width: 95vw;
+	letter-spacing: .05em;
+	border: solid 3px white;
+	font-size: 1.5em;
+	padding: 0;
+	font-weight: normal;
+}
+
+.submit:hover {
+	background-color: white;
+	color: rgba(200,150,150,.85);
+}
+
+.icons {
+	font-size: 2em;
+	color: white;
+	z-index: 1000;
+	padding: 0;
+	margin: 0 auto 25vh;
+}
+
+.icons i {
+	margin: 0 7.5vw;
 }
 
