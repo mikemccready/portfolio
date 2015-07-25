@@ -22,7 +22,7 @@
 		<div class="menu"><i class="fa fa-bars"></i></div>
 		<div class="menuToggle">
 			<div class="menuItem">Projects</div>
-			<div class="menuItem">Contact</div>
+			<a href="#icons"><div class="menuItem">Contact</div></a>
 		</div>
 	</nav>	
 	<h1 id="heroType">MIKE McCREADY</h1>
@@ -56,7 +56,7 @@
 				<input type="hidden" name="redirect" value="http://www.mmccready.com/"> 
 			</form> 
 		</div>
-		<div class="icons">
+		<div class="icons" id ="icons">
 			<a href="https://github.com/mikemccready"><i class="fa fa-github"></i></a>
 			<a href="https://www.linkedin.com/in/mmccready"><i class="fa fa-linkedin"></i></a>
 		</div>
@@ -77,7 +77,7 @@
 
 
 	function parallax() {
-		document.getElementById('heroType').style.top = (window.pageYOffset / 1.25)+'px';
+		document.getElementById('heroType').style.top = (window.pageYOffset / 1.35)+'px';
 	}    
 	window.addEventListener("scroll", parallax, false);
 
