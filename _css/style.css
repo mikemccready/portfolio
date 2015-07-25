@@ -3,6 +3,39 @@ body {
 	font-family: "capitolium-2", baskerville;
 }
 
+a, a:visited {
+	color: white;
+}
+
+.menu {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: 2em;
+	color: white;
+}
+
+.menuToggle {
+	position: absolute;
+	top: 5em;
+	z-index: 3000;
+	width: 100vw;
+	text-align: right;
+}
+
+.menuItem {
+	color: white;
+	background-color: transparent;
+	font-weight: bold;	
+	border-bottom: solid white 2px;
+	padding: 1em 2em;
+}
+
+.menuItem:hover {
+	color: rgba(0,0,0,.5);
+	background-color: white;
+}
+
 h2 {
 	font-family: "alternate-gothic-no-1-d", league gothic;
 	color: white;
@@ -119,18 +152,25 @@ h2 {
 .form {
 	height: 85vh;
 	bottom: 0;
-	padding: 35vh 0 0;
+	padding: 25vh 0 0;
+	color: white !important;
 }
 
 INPUT {
 	font-size: 1em;
 	font-family: "capitolium-2", baskerville;
+	font-weight: bold;
 	max-width: 50em;
 	width: 90vw;
 	margin: 1em 0;
-	padding: 1em 5vw;
+	padding: 1em 5vw 0;
 	border: none;
-	background-color: rgba(255,255,255,.975);
+	background-color: rgba(255,255,255,0);
+	border-bottom: solid white 2px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
 }
 
 TEXTAREA {
@@ -141,5 +181,27 @@ TEXTAREA {
 	margin: 1em 0;
 	padding: 1em 5vw;
 	border: none;
+}
+
+.submit {
+	background-color: transparent;
+	font-family: "alternate-gothic-no-1-d", league gothic;
+	color: white;
+	letter-spacing: .05em;
+	border: solid 3px white;
+	font-size: 1.5em;
+	padding: 0;
+
+}
+
+.icons {
+	font-size: 2em;
+	color: white;
+	z-index: 1000;
+	padding: 0;
+}
+
+.icons i {
+	margin: 1em 7.5vw 2em;
 }
 
