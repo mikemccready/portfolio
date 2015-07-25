@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-	<title>MiMic Devlopement & Design</title>
+	<title>Mimic Developement & Design</title>
 	<link rel="stylesheet" type="text/css" href="_css/style.css">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 	<script type="text/javascript" src="_js/app.js"></script>
 	<script type="text/javascript" src="_js/controller.js"></script>
+	<script src="//use.typekit.net/nnu3rod.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -15,12 +17,14 @@
 	<h1 id="heroType">MIKE McCREADY</h1>
 	<div class="mainContain">
 		<div ng-repeat="p in projectsCtrl.projects" class="pjContain">
-			<div style="background-image: url({{ p.image }})" id="pjImage">
-				<div class="pjDescript">
-					<h3>{{ p.title }}</h3>
-					<p>{{ p.description }}</p>
+			<a ng-href="{{ p.url }}" target="_blank">
+				<div style="background-image: url({{ p.image }})" id="pjImage">
+					<div class="pjDescript">
+						<h3>{{ p.title }}</h3>
+						<p>{{ p.description }}</p>
+					</div>
 				</div>
-			</div>	
+			</a>	
 		</div>
 	</div>
 </body>

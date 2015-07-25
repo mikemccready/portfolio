@@ -12,18 +12,21 @@ angular
 				title: 'SUM OF THE PARTS',
 				description: 'Idea Accelerator built with Ruby on Rails and Foundation',
 				image: '_images/sotps_iphone.jpg',
+				url: 'https://sotps.herokuapp.com/',
 			},
 
 			{
 				title: 'APPTY',
 				description: 'Appointment booking app. Built with Ruby on Rails and Bootstrap',
 				image: '_images/appty-iphone.jpg',
+				url: 'http://apptyapp.herokuapp.com/',
 			},
 
 			{
 				title: 'KILOS',
-				description: 'Training resource and community for fighters. Built with Ruby on Rails and Bootstrap',
+				description: 'Training resource for fighters. Built with Ruby on Rails and Bootstrap',
 				image: '_images/kilos_iphone.jpg',
+				url: 'https://kilosbjj.herokuapp.com/',
 			},
 
 
@@ -31,6 +34,7 @@ angular
 				title: 'GET THAT DOUGH',
 				description: 'Tic-Tac-Toe game built with Angular.js and Firebase',
 				image: '_images/gtd_iphone.jpg',
+				url: 'https://getthatdough.firebaseapp.com/',
 			},
 
 		]

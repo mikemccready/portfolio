@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: baskerville;
+	font-family: "capitolium-2", baskerville;
 }
 
 #hero {
@@ -18,7 +18,7 @@ body {
 
 #heroType {
 	position: absolute;
-	font-family: league gothic;
+	font-family: "alternate-gothic-no-1-d", league gothic;
 	font-weight: normal;
 	color: white;
 	margin-top: 35vh;
@@ -61,7 +61,7 @@ body {
 }
 
 .pjDescript h3 {
-	font-family: league gothic;
+	font-family: "alternate-gothic-no-1-d", league gothic;
 	line-height: .5em;
 	margin: 7.5% 0 0;
 	letter-spacing: .025em;
