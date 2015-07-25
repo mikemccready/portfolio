@@ -16,25 +16,32 @@
 	<div id="hero"></div>
 	<h1 id="heroType">MIKE McCREADY</h1>
 	<div class="mainContain">
-		<div ng-repeat="p in mainCtrl.projects" class="pjContain">
-			<a ng-href="{{ p.url }}" target="_blank">
-				<div style="background-image: url({{ p.image }})" id="pjImage">
-					<div class="pjDescript">
-						<h3>{{ p.title }}</h3>
-						<p>{{ p.description }}</p>
+		<div class="pjWrap">
+			<div ng-repeat="p in mainCtrl.projects" class="pjContain">
+				<a ng-href="{{ p.url }}" target="_blank">
+					<div style="background-image: url({{ p.image }})" id="pjImage">
+						<div class="pjDescript">
+							<h3>{{ p.title }}</h3>
+							<p>{{ p.description }}</p>
+						</div>
 					</div>
-				</div>
-			</a>	
+				</a>	
+			</div>
+<!-- 			<div class="about">
+				<p>
+					Full-stack developer with design chops based in Venice, CA.
+				</p>
+			</div> -->
 		</div>
-		<div>
+		<div class="form">
 		    <form action="http://www.mmccready.com/cgi-sys/formmail.pl" method="post" name="hgmailer"> 
 				<input type="hidden" name="recipient" value="admin@mmccready.com"> 
 				<input type="hidden" name="subject" value="FormMail E-Mail"> 
-				Contact<br><br> 
-				Name: <input type="text" name="name" size="30" value=""><br> 
-				E-Mail: <input type="text" name="email" size="30" value=""><br> 
-				Message: <textarea name="comment" cols="50" rows="5"></textarea><br><br>
-				<input type="button" value="Send" onclick="hgsubmit();"> 
+				<h2>CONTACT ME</h2>
+				<input type="text" name="name" size="30" value="" placeholder="name"> 
+				<input type="text" name="email" size="30" value="" placeholder="email">
+				<textarea name="comment" cols="50" rows="5" placeholder="message"></textarea>
+				<input type="button" value="Send" class="submit" onclick="hgsubmit();"> 
 				<input type="hidden" name="redirect" value="http://www.mmccready.com/"> 
 			</form> 
 		</div>	
@@ -45,7 +52,7 @@
 
 <script>
 	function parallax() {
-		document.getElementById('heroType').style.top = (window.pageYOffset / 1.15)+'px';
+		document.getElementById('heroType').style.top = (window.pageYOffset / 1.25)+'px';
 	}    
 	window.addEventListener("scroll", parallax, false);
 

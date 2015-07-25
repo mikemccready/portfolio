@@ -3,6 +3,14 @@ body {
 	font-family: "capitolium-2", baskerville;
 }
 
+h2 {
+	font-family: "alternate-gothic-no-1-d", league gothic;
+	color: white;
+	letter-spacing: .05em;
+	font-weight: normal;
+	font-size: 7.5vw;
+}
+
 #hero {
 	position: fixed;
 	width: 100vw;
@@ -14,6 +22,7 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;	
+  	background-color: rgba(200,150,150,1);
 }
 
 #heroType {
@@ -36,10 +45,28 @@ body {
 	width: 100vw;
 	z-index: 500;
 	text-align: center;
-	background-color: rgba(255,255,255,.975);
-	padding-top: 7.5vh;
 }
 
+.pjWrap {
+	background-color: rgba(255,255,255,.95);
+	padding: 5vh 0;
+	width: 100vw;
+	text-align: center;
+}
+
+.about {
+	width: 100vx;
+	margin-top: 5vh;
+	background-color: white;
+}
+
+.about p {
+	color: rgba(0,0,0,.5);
+	width: 66%;
+	max-width: 33em;
+	padding: 2em;
+	margin: 0 auto;
+}
 
 .pjContain {
 	width: 100vw;
@@ -89,14 +116,30 @@ body {
   	border-bottom: 2px white solid;
 }
 
-.bg-blur {
-	margin-top: 40em;
-	width: 100vw;
-	height: 50%;
-  	background: url(../_images/bg-blur.jpg) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	z-index: 1000;
+.form {
+	height: 85vh;
+	bottom: 0;
+	padding: 35vh 0 0;
 }
+
+INPUT {
+	font-size: 1em;
+	font-family: "capitolium-2", baskerville;
+	max-width: 50em;
+	width: 90vw;
+	margin: 1em 0;
+	padding: 1em 5vw;
+	border: none;
+	background-color: rgba(255,255,255,.975);
+}
+
+TEXTAREA {
+	font-size: 1em;
+	font-family: "capitolium-2", baskerville;
+	max-width: 50em;
+	width: 90vw;
+	margin: 1em 0;
+	padding: 1em 5vw;
+	border: none;
+}
+
