@@ -24,7 +24,7 @@ angular
 
 			{
 				title: 'KILOS',
-				description: 'Training resource for fighters. Built with Ruby on Rails and Bootstrap',
+				description: 'Resource for fighters. Built with Ruby on Rails and Bootstrap',
 				image: '_images/kilos_iphone.jpg',
 				url: 'https://kilosbjj.herokuapp.com/',
 			},
