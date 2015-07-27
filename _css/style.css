@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 	font-family: "capitolium-2", baskerville;
+	font-weight: lighter;
+	color: white;
 }
 
 a, a:visited {
@@ -11,8 +13,8 @@ a, a:visited {
 
 .menu {
 	position: absolute;
-	top: 1em;
-	right: 1em;
+	top: 2.5vh;
+	right: 2.5vw;
 	font-size: 2em;
 	color: white;
 }
@@ -30,7 +32,7 @@ a, a:visited {
 	background-color: transparent;
 	font-weight: bold;	
 	border-bottom: solid white 2px;
-	padding: 1em 2em;
+	padding: .5em 2em;
 }
 
 .menuItem:hover {
