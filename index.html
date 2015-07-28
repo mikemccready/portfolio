@@ -33,18 +33,21 @@
 	<div class="mainContain">
 		<div class="pjWrap" id="pjs">
 			<div ng-repeat="p in mainCtrl.projects" class="pjContain">
-				<a ng-href="{{ p.url }}" target="_blank">
 					<div style="background-image: url({{ p.image }})" id="pjImage">
 						<div class="pjDescript">
-							<h3>{{ p.title }}</h3>
-							<p>{{ p.description }}</p>
-							<div class="pjMoreBtn" ng-click="pjDetail = ! pjDetail">More</div>
+							<a ng-href="{{ p.url }}" target="_blank">
+								<h3>{{ p.title }}</h3>
+							</a>	
+							<!-- <p> -->
+<!-- 								{{ p.description }} -->
+								<div class="pjMoreBtn" ng-click="pjDetail = ! pjDetail">Detail</div>
+							<!-- </p> -->
 						</div>
 					</div>
-					<div class="pjDetail" ng-hide="pjDetail">
-						moredetails
+					<div class="pjDetail" ng-hide="!pjDetail">
+						{{ p.details }}
 					</div>
-				</a>	
+
 			</div>
 <!-- 			<div class="about">
 				<p>

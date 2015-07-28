@@ -13,6 +13,7 @@ angular
 				description: 'Idea Accelerator built with Ruby on Rails and Foundation',
 				image: '_images/sotps_iphone.jpg',
 				url: 'https://sotps.herokuapp.com/',
+				details: 'Idea Accelerator built with Ruby on Rails and Foundation',
 			},
 
 			{
