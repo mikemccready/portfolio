@@ -153,6 +153,16 @@ h2 {
   	border-bottom: 2px white solid;
 }
 
+.pjMoreBtn {
+	border: 2px solid white;
+	padding: .5em;
+	z-index: 1000;
+}
+
+.pjDetail {
+	color: rgba(0,0,0,.8);
+}
+
 .form {
 
 	padding: 25vh 0 0;
