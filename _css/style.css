@@ -31,12 +31,12 @@ a, a:visited {
 	color: white;
 	background-color: transparent;
 	font-weight: bold;	
-	border-bottom: solid white 2px;
+/*	border-bottom: solid white 2px;*/
 	padding: .5em 2em;
 }
 
 .menuItem:hover {
-	color: rgba(200,150,150,.85);
+	color: rgba(180,150,150,.95);
 	background-color: white;
 }
 
@@ -54,12 +54,12 @@ h2 {
 	height: 100vh;
 	top: 0;
 	z-index: 0;
-  	background: url(../_images/hero.jpg) no-repeat center center fixed; 
+  	background: url(https://grasshopperreps.files.wordpress.com/2012/01/photo1.jpg) no-repeat center center; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;	
-  	background-color: rgba(200,150,150,.85);
+  	background-color: rgba(180,150,150,.95);
 }
 
 #heroType {
@@ -67,7 +67,7 @@ h2 {
 	font-family: "alternate-gothic-no-1-d", league gothic;
 	font-weight: normal;
 	color: white;
-	margin-top: 40vh;
+	margin-top: 45vh;
 	font-size: 12vw;
 	z-index: 300;
 	text-align: center;
@@ -172,8 +172,27 @@ INPUT {
 	border-bottom: solid white 2px;
 }
 
+TEXTAREA {
+	font-size: 1em;
+	font-family: "capitolium-2", baskerville;
+	font-weight: bold;
+	max-width: 50em;
+	width: 90vw;
+	margin: 1em 0;
+	padding: 1em 5vw 0;
+	border: none;
+	background-color: rgba(255,255,255,0);
+	border-bottom: solid white 2px;
+	overflow:hidden;
+	color: white;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    white;
+    color:  white;
+}
+
+::-webkit-input { /* WebKit browsers */
+    color:  white;
 }
 
 .submit {
@@ -191,7 +210,7 @@ INPUT {
 
 .submit:hover {
 	background-color: white;
-	color: rgba(200,150,150,.85);
+	color: rgba(180,150,150,.95);
 }
 
 .icons {
