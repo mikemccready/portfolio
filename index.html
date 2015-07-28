@@ -52,17 +52,19 @@
 		    <form action="http://www.mmccready.com/cgi-sys/formmail.pl" method="post" name="hgmailer"> 
 				<input type="hidden" name="recipient" value="admin@mmccready.com"> 
 				<input type="hidden" name="subject" value="FormMail E-Mail"> 
+
 				<h2>CONTACT</h2>
-				<input type="text" name="name" size="30" value="" placeholder="name"> 
-				<input type="text" name="email" size="30" value="" placeholder="email address">
-				<input name="comment" cols="10" rows="5" placeholder="message"></input>
+
+				<input type="text" name="name" size="30" value="" placeholder="name" onkeydown="inputColor(this)"> 
+				<input type="text" name="email" size="30" value="" placeholder="email address" onkeydown="inputColor(this)">
+				<textarea name="comment" cols="145" rows="1" placeholder="message" id="message" onkeyup="textAreaAdjust(this)"></textarea>
 				<input type="button" value="SEND" class="submit" onclick="hgsubmit();"> 
 				<input type="hidden" name="redirect" value="http://mmccready.com/"> 
 			</form> 
 		</div>
 		<div class="icons" id ="icons">
-			<a href="https://github.com/mikemccready"><i class="fa fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/mmccready"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/mikemccready" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/mmccready" target="_blank"><i class="fa fa-linkedin"></i></a>
 		</div>
 	
 	</div>
@@ -76,12 +78,23 @@
 		$(".menuToggle").hide();
 		$(".menu").click(function(){
 			$(".menuToggle").slideToggle();
-		});
+		});	
+		
 	});
+
+	function textAreaAdjust(t) {
+    	t.style.height = "1px";
+    	t.style.height = (25+t.scrollHeight)+"px";
+    	t.style.color = "white";
+	}
+
+	function inputColor(t) {
+    	t.style.color = "white";
+	}	
 
 
 	function parallax() {
-		document.getElementById('heroType').style.top = (window.pageYOffset / 1.35)+'px';
+		document.getElementById('heroType').style.top = (window.pageYOffset / 1.4)+'px';
 	}    
 	window.addEventListener("scroll", parallax, false);
 
