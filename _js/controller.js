@@ -13,6 +13,7 @@ angular
 				description: 'Idea Accelerator built with Ruby on Rails and Foundation',
 				image: '_images/sotps_iphone.jpg',
 				url: 'https://sotps.herokuapp.com/',
+				gitUrl: 'https://github.com/mikemccready/SOTPS',
 				detailHead: 'Idea Accelerator built with Ruby on Rails and Foundation.', 
 				detailFeatures: [
 					{ feature:'jQuery', },
@@ -29,6 +30,7 @@ angular
 				description: 'Appointment booking app. Built with Ruby on Rails and Bootstrap',
 				image: '_images/appty-iphone.jpg',
 				url: 'http://apptyapp.herokuapp.com/',
+				gitUrl: 'https://github.com/mikemccready/appty',
 				detailHead: 'Appointment booking app. Built with Ruby on Rails and Bootstrap',
 				detailFeatures: [
 					{ feature:'Google OmniAuth', },
@@ -43,6 +45,7 @@ angular
 				description: 'Resource for fighters. Built with Ruby on Rails and Bootstrap',
 				image: '_images/kilos_iphone.jpg',
 				url: 'https://kilosbjj.herokuapp.com/',
+				gitUrl: 'https://github.com/mikemccready/kilos',
 				detailHead: 'Resource for fighters. Built with Ruby on Rails and Bootstrap',
 				detailFeatures: [
 					{ feature:'CRUD functionality', },
@@ -60,6 +63,7 @@ angular
 				description: 'Tic-Tac-Toe game built with Angular.js and Firebase',
 				image: '_images/gtd_iphone.jpg',
 				url: 'https://getthatdough.firebaseapp.com/',
+				gitUrl: 'https://github.com/mikemccready/getThatDough-NGFire',
 				detailHead: 'Tic-Tac-Toe game built with Angular.js and Firebase',
 				detailFeatures: [
 					{ feature:'Firebase Application', },
