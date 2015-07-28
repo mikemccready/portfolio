@@ -13,7 +13,15 @@ angular
 				description: 'Idea Accelerator built with Ruby on Rails and Foundation',
 				image: '_images/sotps_iphone.jpg',
 				url: 'https://sotps.herokuapp.com/',
-				details: 'Idea Accelerator built with Ruby on Rails and Foundation',
+				detailHead: 'Idea Accelerator built with Ruby on Rails and Foundation.', 
+				detailFeatures: [
+					{ feature:'jQuery', },
+					{ feature:'Facebook OmniAuth', },
+					{ feature:'Stripe Donations', },
+					{ feature:'Amazon S3', },
+					{ feature:'Responsive & Mobile Optimized', },
+					{ feature:'Heroku Deployed', },
+				],
 			},
 
 			{
@@ -21,6 +29,13 @@ angular
 				description: 'Appointment booking app. Built with Ruby on Rails and Bootstrap',
 				image: '_images/appty-iphone.jpg',
 				url: 'http://apptyapp.herokuapp.com/',
+				detailHead: 'Appointment booking app. Built with Ruby on Rails and Bootstrap',
+				detailFeatures: [
+					{ feature:'Google OmniAuth', },
+					{ feature:'Google Calendar API', },
+					{ feature:'Responsive & Mobile Optimized', },
+					{ feature:'Heroku Deployed', },
+				],
 			},
 
 			{
@@ -28,6 +43,15 @@ angular
 				description: 'Resource for fighters. Built with Ruby on Rails and Bootstrap',
 				image: '_images/kilos_iphone.jpg',
 				url: 'https://kilosbjj.herokuapp.com/',
+				detailHead: 'Resource for fighters. Built with Ruby on Rails and Bootstrap',
+				detailFeatures: [
+					{ feature:'CRUD functionality', },
+					{ feature:'User Authentication', },
+					{ feature:'Video Upload', },
+					{ feature:'Responsive & Mobile Optimized', },
+					{ feature:'Heroku Deployed', },
+				],
+
 			},
 
 
@@ -36,6 +60,14 @@ angular
 				description: 'Tic-Tac-Toe game built with Angular.js and Firebase',
 				image: '_images/gtd_iphone.jpg',
 				url: 'https://getthatdough.firebaseapp.com/',
+				detailHead: 'Tic-Tac-Toe game built with Angular.js and Firebase',
+				detailFeatures: [
+					{ feature:'Firebase Application', },
+					{ feature:'CSS animation', },
+					{ feature:'Responsive & Mobile Optimized', },
+					{ feature:'Real-time gameplay on multiple devices', },
+				],
+
 			},
 
 		]
