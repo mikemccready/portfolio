@@ -40,12 +40,17 @@
 							</a>	
 							<!-- <p> -->
 <!-- 								{{ p.description }} -->
-								<div class="pjMoreBtn" ng-click="pjDetail = ! pjDetail">Detail</div>
+								<div class="pjMoreBtn" ng-click="pjDetail = ! pjDetail">Project Detail</div>
 							<!-- </p> -->
 						</div>
 					</div>
 					<div class="pjDetail" ng-hide="!pjDetail">
-						<h4>{{ p.detailHead }}</h4>
+						<h3>
+							{{ p.detailHead }}
+							<a href="{{ p.gitUrl }}" target="_blank" class="projectGit">
+								<i class="fa fa-github"></i>
+							</a>
+						</h3>
 						<p ng-repeat="f in p.detailFeatures">{{ f.feature }}</p>
 					</div>
 
