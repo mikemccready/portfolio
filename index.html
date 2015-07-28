@@ -45,7 +45,8 @@
 						</div>
 					</div>
 					<div class="pjDetail" ng-hide="!pjDetail">
-						{{ p.details }}
+						<h4>{{ p.detailHead }}</h4>
+						<p ng-repeat="f in p.detailFeatures">{{ f.feature }}</p>
 					</div>
 
 			</div>
