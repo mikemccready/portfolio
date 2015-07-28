@@ -38,7 +38,11 @@
 						<div class="pjDescript">
 							<h3>{{ p.title }}</h3>
 							<p>{{ p.description }}</p>
+							<div class="pjMoreBtn" ng-click="pjDetail = ! pjDetail">More</div>
 						</div>
+					</div>
+					<div class="pjDetail" ng-hide="pjDetail">
+						moredetails
 					</div>
 				</a>	
 			</div>
@@ -75,10 +79,16 @@
 <script>
 
 	$(document).ready(function(){
+		
 		$(".menuToggle").hide();
 		$(".menu").click(function(){
 			$(".menuToggle").slideToggle();
 		});	
+
+		// $(".pjDetail").hide();
+		// $(".pjMoreBtn").click(function(){
+		// 	$(".pjDetail").slideToggle();
+		// });
 		
 	});
 
