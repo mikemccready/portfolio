@@ -45,7 +45,7 @@ h2 {
 	color: white;
 	letter-spacing: .05em;
 	font-weight: normal;
-	font-size: 7.5vw;
+	font-size: 9vw;
 }
 
 h3 {
@@ -164,21 +164,25 @@ h3 {
 
 .pjMoreBtn {
 	position: absolute;
-	border: 2px solid rgba(255,255,255,.8);
+	border: 1px solid rgba(255,255,255,.8);
+	padding: .25em 7.5%;
 	text-align: center;
 	z-index: 5000;
-	bottom: 0.5em;
-	margin: 0 0 0 .25em;
+	bottom: 0em;
+	margin: 0 0 5% 0;
 	color: rgba(255,255,255,.8);
 	font-size: 1em;
-
-	padding: .25em .5em;
 }
+
+.pjMoreBtn:hover {
+	background-color: white;
+	color: rgba(180,150,150,.95);
+}	
 
 .pjDetail {
 	color: rgba(0,0,0,.5);
 	text-align: left;
-	margin: 1em 5% 0;
+	margin: 1em 5% 2em;
 	line-height: 0.5em;
 }
 
@@ -199,12 +203,13 @@ h3 {
 }
 
 INPUT {
+	display: block;
 	font-size: 1em;
 	font-family: "capitolium-2", baskerville;
 	font-weight: bold;
 	max-width: 50em;
 	width: 90vw;
-	margin: 1em 0;
+	margin: 1em auto;
 	padding: 1em 5vw 0;
 	border: none;
 	background-color: rgba(255,255,255,0);
@@ -212,12 +217,13 @@ INPUT {
 }
 
 TEXTAREA {
+	display: block;
 	font-size: 1em;
 	font-family: "capitolium-2", baskerville;
 	font-weight: bold;
 	max-width: 50em;
 	width: 90vw;
-	margin: 1em 0;
+	margin: 1em auto;
 	padding: 1em 5vw 0;
 	border: none;
 	background-color: rgba(255,255,255,0);
@@ -244,6 +250,7 @@ TEXTAREA {
 	border: solid 3px white;
 	font-size: 1.5em;
 	padding: 0;
+	margin: 2em auto 1em;
 	font-weight: normal;
 }
 
