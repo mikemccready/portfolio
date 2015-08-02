@@ -16,7 +16,6 @@ angular
 				gitUrl: 'https://github.com/mikemccready/SOTPS',
 				detailHead: 'Idea Accelerator built with Ruby on Rails and Foundation.', 
 				detailFeatures: [
-					{ feature:'jQuery', },
 					{ feature:'Facebook OmniAuth', },
 					{ feature:'Stripe Donations', },
 					{ feature:'Amazon S3', },
@@ -51,6 +50,7 @@ angular
 					{ feature:'CRUD functionality', },
 					{ feature:'User Authentication', },
 					{ feature:'Video Upload', },
+					{ feature:'Amazon S3', },
 					{ feature:'Responsive & Mobile Optimized', },
 					{ feature:'Heroku Deployed', },
 				],
